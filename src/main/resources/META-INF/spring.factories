@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.kismet.operatelog.starter.config.ServerConfigAutoConfiguration
+io.github.kismet2399.config.ServerConfigAutoConfiguration
