@@ -17,8 +17,8 @@ public class ParseFunctionFactory {
     /**
      * 获取自定义函数
      *
-     * @param functionName
-     * @return
+     * @param functionName 函数名称
+     * @return 自定义函数
      */
     public IParseFunction getFunction(String functionName) {
         IParseFunction function = allFunctionMap.get(functionName);

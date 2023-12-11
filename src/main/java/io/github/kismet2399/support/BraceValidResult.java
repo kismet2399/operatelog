@@ -33,8 +33,7 @@ public class BraceValidResult {
     /**
      * 是否拥有{}
      *
-     * @return
-     */
+     * @return true，如果左右括号匹配且左花括号和右花括号的数量都大于等于1；否则返回false     */
     public boolean hasBrace() {
         return braceMatch && leftBraceCount >= 1 && rightBraceCount >= 1;
     }

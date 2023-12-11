@@ -19,7 +19,7 @@ public class FuncInput {
     /**
      * 规定以#开头的是SpEL表达式
      *
-     * @return
+     * @return 是否SpEL表达式
      */
     public Boolean isSpEl() {
         return input.startsWith("#");

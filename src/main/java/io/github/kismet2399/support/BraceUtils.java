@@ -10,8 +10,8 @@ public class BraceUtils {
     /**
      * 校验花括号是否匹配
      *
-     * @param s
-     * @return
+     * @param s 被校验字符
+     * @return 校验结果
      */
     public static BraceValidResult isBraceValid(String s) {
         if (s.length() <= 4) {
@@ -46,7 +46,8 @@ public class BraceUtils {
     }
 
     /**
-     * 查询content中的{}
+     * @param content 内容字符串
+     * @return BraceResult对象，包含左大括号的index，与之匹配的右大括号的index以及两者之间的内容
      */
     public static BraceResult findBraceResult(String content) {
         // 找到第一个"{"

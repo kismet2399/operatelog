@@ -14,10 +14,10 @@ public interface IExpression {
     /**
      * 执行表达式
      *
-     * @param point
-     * @param expressionEvaluator
-     * @param iFunctionService
-     * @return
+     * @param point               ProceedingJoinPoint       方法连接点
+     * @param expressionEvaluator OperateLogExpressionEvaluator   运算表达式评估器
+     * @param iFunctionService    IFunctionService           函数服务接口
+     * @return String                     执行结果
      */
     String execute(ProceedingJoinPoint point,
                    OperateLogExpressionEvaluator expressionEvaluator,

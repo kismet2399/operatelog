@@ -10,7 +10,7 @@ public interface IParseFunction {
     /**
      * 实体操作前json
      *
-     * @return
+     * @return 操作前json
      */
     default String beforeJson() {
         return "{}";

@@ -12,8 +12,7 @@ public interface ILogSaveService {
     /**
      * 存储操作日志
      *
-     * @param dto
-     * @throws Exception
+     * @param dto 操作日志数据传输对象
      */
     void storeOperateLog(OperateLogDTO dto);
 

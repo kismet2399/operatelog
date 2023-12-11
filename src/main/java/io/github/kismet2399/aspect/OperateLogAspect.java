@@ -143,8 +143,8 @@ public class OperateLogAspect implements ApplicationContextAware {
     /**
      * 解析LogContent
      *
-     * @param content
-     * @return
+     * @param content 需要解析的LogContent
+     * @return 解析结果LogTemplateResult对象
      */
     private LogTemplateResult parseLogTemplateResult(String content) {
         BraceValidResult braceValidResult = BraceUtils.isBraceValid(content);
@@ -187,8 +187,8 @@ public class OperateLogAspect implements ApplicationContextAware {
      * out:
      * spElExpression = #request.userName
      *
-     * @param content
-     * @return
+     * @param content 自定义函数或SpEl表达式内容
+     * @return 解析后的函数template，如果是自定义函数，则为FunctionTemplate对象；如果是SpEl表达式，则为SpELTemplate对象
      */
     private IExpression parseExpression(String content) {
         BraceResult braceResult = BraceUtils.findBraceResult(content);

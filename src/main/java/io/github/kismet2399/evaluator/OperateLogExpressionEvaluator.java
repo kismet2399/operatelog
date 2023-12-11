@@ -36,9 +36,9 @@ public class OperateLogExpressionEvaluator extends CachedExpressionEvaluator {
     /**
      * 执行el表达式解析 获取结构
      *
-     * @param joinPoint
-     * @param condition
-     * @return
+     * @param joinPoint join点
+     * @param condition 条件
+     * @return 解析结果
      */
     public String executeStringExpression(JoinPoint joinPoint, String condition) {
         if (StringUtils.isEmpty(condition)) {
@@ -52,9 +52,9 @@ public class OperateLogExpressionEvaluator extends CachedExpressionEvaluator {
     /**
      * 执行el表达式解析 获取结构
      *
-     * @param joinPoint
-     * @param condition
-     * @return
+     * @param joinPoint 切点对象
+     * @param condition 条件表达式
+     * @return 解析结果
      */
     public Object executeObjectExpression(JoinPoint joinPoint, String condition) {
         if (StringUtils.isEmpty(condition)) {
